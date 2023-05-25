@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameDeals</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.component.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/61ebb60581.js" crossorigin="anonymous"></script>
+    <script defer src="assets/js/index.js"></script>
+  </head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <a href="#" class="logo nav-link">GameDeals</a>
+    <button class="nav-toggle" aria-label="Abrir Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="nav-menu">
+      <li class="nav-menu-item">
+        <a href="#Main" class="nav-menu-link nav-link">Inicio</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="#AboutUs" class="nav-menu-link nav-link">Sobre Nosotros</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="#WhoWeAre" class="nav-menu-link nav-link">¿Quiénes somos?</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="#ContactUs" class="nav-menu-link nav-link nav-menu-link-active">Contáctanos</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="Main">
+  <div class="titleBox">
+    <h1 class="Title">¡No vuelvas a pagar el precio completo!</h1>
+  </div>
+  <div class="LogoImage"></div>
+</section>
+<section class="AboutUs w3-container" id="AboutUs">
+  <div class="column">
+    <div class="text">
+      <h2 class="Title_AboutUs">Sigue tu hobbie sin preocuparte de los precios</h2>
+    </div>
+    <div class="image1">
+      <img src="{{ url_for('static', filename='img/img3.png') }}" style="width:150px; height:150px">
+      <div class="container">
+        <h4><b>Crea una lista de deseos</b></h4>
+        <p>Añade videojuegos a tu lista para recibir notificaciones de descuentos o promociones</p>
+      </div>
+    </div>
+    <div class="image2">
+      <img src="{{ url_for('static', filename='img/img4.png')}}" style="width:150px; height:150px">
+      <div class="container">
+        <h4><b>Recibe recomendaciones personalizadas</b></h4>
+        <p>Nuestro algoritmo te dará sugerencias basadas en tus juegos recientes e intereses</p>
+      </div>
+    </div>
+    <div class="image3">
+      <img src="{{url_for('static', filename='img/img5.png')}}" style="width:150px; height:150px">
+      <div class="container">
+        <h4><b>Encuentra videojuegos independientes</b></h4>
+        <p>Encuentra videojuegos independientes y apoya a sus desarrolladores</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="WhoWeAre" id="WhoWeAre">
+      <div class="wrapper-participants">
+        <div class="Title_participants">
+          <h2 class="title">Conoce al equipo detras de la aplicación</h2>
+        </div>
+        <div class="participant-grid participant_one">
+          <h3 class="participant-name">aaaaqa</h3>
+          <div class="Pic Pic1"></div>
+          <div class="">
+            <a href="https://www.facebook.com" class="socialMedia">
+              <i class="fa fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" class="socialMedia">
+              <i style="padding-left:10px" class="fa fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://github.com/aaaaqa" class="socialMedia">
+              <i style="padding-left:10px" class="fa fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="participant-grid participant_two">
+          <h3 class="participant-name">Elyeet9</h3>
+          <div class="Pic Pic2"></div>
+          <div class="">
+            <a href="https://www.facebook.com" class="socialMedia">
+              <i class="fa fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" class="socialMedia">
+              <i style="padding-left:10px" class="fa fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://github.com/Elyeet9" class="socialMedia">
+              <i style="padding-left:10px" class="fa fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="participant-grid participant_three">
+          <h3 class="participant-name">FrowsyFrog</h3>
+          <div class="Pic Pic3"></div>
+          <div class="">
+            <a href="https://www.facebook.com" class="socialMedia">
+              <i class="fa fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" class="socialMedia">
+              <i style="padding-left:10px" class="fa fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://github.com/FrowsyFrog" class="socialMedia">
+              <i style="padding-left:10px" class="fa fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="participant-grid participant_four">
+          <h3 class="participant-name">JBenites10</h3>
+          <div class="Pic Pic4"></div>
+          <div class="">
+            <a href="https://www.facebook.com" class="socialMedia">
+              <i class="fa fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" class="socialMedia">
+              <i style="padding-left:10px" class="fa fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://github.com/JBenites10" class="socialMedia">
+              <i style="padding-left:10px" class="fa fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="participant-grid participant_five">
+          <h3 class="participant-name">mache12V2</h3>
+          <div class="Pic Pic5"></div>
+          <div class="">
+            <a href="https://www.facebook.com" class="socialMedia">
+              <i class="fa fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" class="socialMedia">
+              <i style="padding-left:10px" class="fa fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://github.com/mache12V2" class="socialMedia">
+              <i style="padding-left:10px" class="fa fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ContactUs" id="ContactUs">
+      <div class="wrapper-footer">
+        <div class="wrapper-one">
+          <h3 class="section-grid-title">Información</h3>
+          <span class="information-text"
+            >Síguenos en nuestras redes sociales</span
+          >
+          <div class="">
+            <a
+              href="https://www.facebook.com"
+              class="socialMedia socialMedia_footer"
+            >
+              <i class="fa fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              class="socialMedia socialMedia_footer"
+            >
+              <i style="padding-left:10px" class="fa fa-brands fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              class="socialMedia socialMedia_footer"
+            >
+              <i style="padding-left:10px" class="fa fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="wrapper-two">
+          <h3 class="section-grid-title">Navegación</h3>
+          <ul class="section-grid-list">
+            <a href="#AboutUs" class="footer-link"> > Sobre Nosotros</a>
+            <a href="#Main" class="footer-link"> > Inicio</a>
+            <a href="#Main" class="footer-link"> > Iniciar Sesión</a>
+          </ul>
+        </div>
+        <div class="wrapper-three">
+          <h3 class="section-grid-title">Contáctanos</h3>
+          <ul class="section-grid-list">
+            <li class="grid-list-item">
+              <i class="fa fa-solid fa-location-dot"></i><span> Lima,Perú</span>
+            </li>
+            <li class="grid-list-item">
+              <i class="fa fa-solid fa-envelope"></i
+              ><span> contacto@GameDeals.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
+<router-outlet></router-outlet>

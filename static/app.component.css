@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: sans-serif;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #020E27;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #0ECCF4;
+    transition: 0.5s;
+  }
+  
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+  
+  .Main {
+    background-image: url("https://www.nopcommerce.com/images/blog/2017-august-quick-tip-how-to-get-best-of-the-discounts-functionality-in-nopcommerce-store/main_discounts.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .titleBox {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    background-color: #020E27;
+    padding: 20px;
+    border-radius: 0% 50px 50px 0%;
+  }
+  
+  .Title {
+    font-size: 60px;
+    margin-left: 30px;
+    text-align: left;
+    color: #E0E0E0;
+    bottom: 10px;
+  }
+  
+  .LogoImage {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: 30px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: cover;
+    max-width: 350px;
+  }
+  
+  .AboutUs {
+    background-color: #76F2AE;
+    display: flex;
+    color: #1d1a2f;
+  }
+
+  .AboutUs-grid {
+    margin: 0px auto;
+  }
+
+  .column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) repeat(2, 0);
+    grid-template-rows: repeat(2, 1fr) repeat(3, 0);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+  }
+
+  .text {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+
+  .image1 {
+    grid-area: 2 / 1 / 3 / 2;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .image2 {
+    grid-area: 2 / 2 / 3 / 3;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .image3 {
+    grid-area: 2 / 3 / 3 / 4;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  
+  .Title_AboutUs {
+    padding: 30px;
+    font-size: 38px;
+    margin-top: 20px;
+    position: relative;
+    left: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: left;
+  }
+
+  .WhoWeAre {
+    background-color: white;
+  }
+  
+  .wrapper-participants {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  
+  .Title_participants {
+    margin-top: 20px;
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  .participant-grid {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  
+  .Pic {
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  
+  .Pic1 {
+    background-image: url("/static/img/aaaaqapfp.png");
+  }
+  .Pic2 {
+    background-image: url("/static/img/elyeet9pfp.png");
+  }
+  .Pic3 {
+    background-image: url("/static/img/frowsyfrogpfp.png");
+  }
+  .Pic4 {
+    background-image: url("/static/img/jbenites10pfp.png");
+  }
+  .Pic5 {
+    background-image: url("/static/img/mache12V2pfp.png");
+  }
+
+  .ContactUs {
+    background-color: #020E27 ;
+    height: 25%;
+  }
+
+  section[id] {
+    scroll-margin-top: 80px;
+  }
+  
+  section:first-of-type {
+    margin-top: 80px;
+  }
+  section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper-footer {
+    display: grid;
+    height: 25%;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  
+  .section-grid-title {
+    text-transform: uppercase;
+  }
+
+  .wrapper-one {
+    grid-column: 1;
+    grid-row: 1/3;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+  }
+  
+  .socialMedia {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .socialMedia_footer {
+    color: white;
+  }
+  .information-text {
+    font-size: 16px;
+  }
+  .wrapper-two {
+    grid-column: 2;
+    grid-row: 1/3;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .footer-link {
+    color: white;
+    text-decoration: none;
+    margin: 3px;
+  }
+  
+  .section-grid-list {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+  }
+  
+  .wrapper-three {
+    grid-column: 3;
+    grid-row: 1/3;
+    padding: 20px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      height: 60px;
+      width: 100vw;
+    }
+  
+    iframe {
+      max-width: 300px;
+      max-height: 250px;
+    }
+    .logo {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: gray;
+      position: fixed;
+      left: 0;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: black;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  
+    section {
+      min-width: 100%;
+    }
+  
+    section:first-of-type {
+      margin-top: 60px;
+    }
+  
+    .Hero {
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+    .titleBox {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+  
+    .Title {
+      font-size: 40px;
+      text-align: center;
+      margin-left: 0;
+    }
+  
+    .LogoImage {
+      width: 170px;
+      height: 170px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .wrapper-participants {
+      display: flex;
+      flex-direction: column;
+    }
+    .WhoWeAre {
+      height: auto;
+    }
+  
+    .AboutUs {
+      height: 100%;
+    }
+  
+    .ContactUs {
+      height: max-content;
+    }
+    .wrapper-footer {
+      display: flex;
+      flex-direction: column;
+    }
+  }
